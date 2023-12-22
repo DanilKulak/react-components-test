@@ -1,17 +1,17 @@
-import user from './user.json'
-import Profile from "./Profile/Profile";
-import ReactDOM from 'react-dom'
+import Profile from './Profile/Profile';
+import user from '../data/user.json';
+import Stats from './Stats/Stats';
 
-export const App = () => {
-
-  ReactDOM.render(
-    <Profile
-    username={user.username}
-    tag={user.tag}
-    location={user.location}
-    avatar={user.avatar}
-    stats={user.stats}
-    />,
-    document.getElementById('root')
-  );
+export const App = (props) => {
+  <>
+<Profile
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+/>
+<Stats
+  stats={user.stats}
+/>
+  </>
 }
