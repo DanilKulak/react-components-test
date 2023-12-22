@@ -2,7 +2,7 @@ import Profile from './Profile/Profile';
 import user from '../data/user.json';
 import Stats from './Stats/Stats';
 
-export const App = (props) => {
+export const App = () => {
   <>
 <Profile
   username={user.username}
