@@ -1,22 +1,27 @@
 import PropTypes from 'prop-types';
+import {StatsContainer} from './Stats.styled';
+import {StatItem} from './Stats.styled';
+
 const Stats = ({ stats }) => {
     const { followers, views, likes } = stats;
 
     return (
+      <StatsContainer>
         <ul className="stats">
-        <li>
+        <StatItem>
           <span className="label">Followers</span>
           <span className="quantity">{followers}</span>
-        </li>
-        <li>
+        </StatItem>
+        <StatItem>
           <span className="label">Views</span>
           <span className="quantity">{views}</span>
-        </li>
-        <li>
+        </StatItem>
+        <StatItem>
           <span className="label">Likes</span>
           <span className="quantity">{likes}</span>
-        </li>
+        </StatItem>
       </ul>
+      </StatsContainer>
     );
 };
 

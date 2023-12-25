@@ -1,6 +1,7 @@
+import { ProfileContainer } from "./Profile.styled";
 const Profile = ({username, tag, location, avatar}) => {
 return (
-<div className="profile">
+  <ProfileContainer>
   <div className="description">
     <img
       src={avatar}
@@ -11,7 +12,7 @@ return (
     <p className="tag">@{tag}</p>
     <p className="location">{location}</p>
   </div>
-</div>
+</ProfileContainer>
 )
 }
 
