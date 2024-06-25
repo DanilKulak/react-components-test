@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-01-components",
+  "name": "react-components-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DanilKulak.github.io/goit-react-hw-01-components/",
+  "homepage": "https://DanilKulak.github.io/react-components-test/",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
